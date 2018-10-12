@@ -1,0 +1,370 @@
+body {
+	font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	font-size: 20px;
+	width: 100%;
+	height: 100%;
+	background: #f9f9f9;
+	position:relative;
+}
+
+body,
+div,
+span,
+small,
+p,
+em,
+i,
+b,
+th,
+td,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+textarea {
+	padding: 0;
+	margin: 0
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none
+}
+
+a img {
+	border: none
+}
+
+ul,
+ol {
+	list-style: none
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse
+}
+
+input,
+button {
+	background-image: none;
+}
+
+body,
+div,
+span,
+small,
+p,
+em,
+i,
+b,
+th,
+td,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+a,
+em,
+i,
+b {
+	font-style: normal;
+	list-style: none
+}
+
+input,
+textarea {
+	color: #666666
+}
+
+a,
+button {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-user-modify: read-only;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+input[type=radio]::-ms-check,
+input[type=checkbox]::-ms-check {
+	display: none;
+}
+
+input[type=text]::-ms-clear,
+input[type=tel]::-ms-clear,
+input[type=number]::-ms-clear {
+	display: none;
+}
+
+::-webkit-input-placeholder {
+	/* WebKit browsers */
+	color: #999;
+}
+
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #999;
+}
+
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #999;
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	color: #999;
+}
+
+input:focus::-webkit-input-placeholder {
+	color: #999;
+}
+
+input::-webkit-input-speech-button {
+	display: none
+}
+
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+
+/*定义滑块 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #555;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="search"],
+input[type="reset"] {
+	-webkit-appearance: none;
+}
+
+textarea {
+	-webkit-appearance: none;
+}
+
+.clear {
+	zoom: 1;
+}
+
+.clear:before,
+.clear:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	padding-right: 10px;
+}
+
+
+/*********************************************表单样式覆盖（表格上面公共样式）*******************************/
+
+
+/*表单外层div盒子必须加.table_form_wrap*/
+
+.table_form_wrap .el-form-item__label {
+	color: #6e84c9;
+	padding-right: 0;
+}
+
+.table_form_wrap .el-input__inner {
+	border: 1px solid #ccd9e9;
+	background-color: #e9f0ff;
+}
+
+.table_form_wrap .el-input__inner::-webkit-input-placeholder {
+	color: rgba(110, 132, 201, 0.5);
+}
+
+.table_form_wrap .el-input__inner::-moz-placeholder {
+	color: rgba(110, 132, 201, 0.5);
+}
+
+.table_form_wrap .el-input__inner:-moz-placeholder {
+	color: rgba(110, 132, 201, 0.5);
+}
+
+.table_form_wrap .el-input__inner:-ms-input-placeholder {
+	color: rgba(110, 132, 201, 0.5);
+}
+
+.table_form_wrap .el-input__suffix .el-select__caret {
+	color: #6e84c9 !important;
+}
+
+.table_form_wrap .el-form-item__content .el-button {
+	color: white;
+	border: none;
+	background: #a7b7e9;
+}
+
+.table_form_wrap .el-form-item__content .el-button:hover {
+	box-shadow: 0 0 5px #6e84c9;
+}
+
+.table_form_wrap .el-input__inner {
+	color: #6e84c9;
+}
+
+
+/*********************************************表单样式覆盖（其它公共样式）*******************************/
+
+
+/*表单外层必须加.form_wrap_div*/
+
+.form_wrap_div {
+	width: 800px;
+}
+
+.form_wrap_div .el-form-item {
+	margin-bottom: 15px;
+	margin-right: 0 !important;
+}
+
+
+/*********************************************表格样式覆盖（公共样式）*******************************/
+
+.el-table th {
+	background: #e9f0ff;
+	color: #637bc5;
+}
+
+.el-table .warning-row {
+	background: #fff;
+}
+
+.el-table .success-row {
+	background: #f0f9eb;
+}
+
+.el-table td,
+.el-table th {
+	padding: 10px 0px;
+}
+
+.el-select .el-input.is-focus .el-input__inner {
+	border-color: #1bbdc9
+}
+
+.table_form_wrap .demo-ruleForm {
+	padding: 15px 0px 15px 0px;
+}
+
+.table_form_wrap .el-form-item {
+	margin-bottom: 0px;
+}
+
+
+/*通知页面*/
+
+.Message .el-badge__content.is-fixed {
+	top: 10px;
+	right: 1px;
+}
+
+.Message .el-badge {
+	color: #97a6d8;
+	font-size: 14px;
+}
+
+.el-collapse-item__content {
+	padding-bottom: 0;
+}
+
+.el-collapse {
+	border-top: none;
+}
+
+
+/*弹窗*/
+
+.el-dialog__header {
+	background: #e9f0ff;
+}
+
+.el-dialog__title {
+	color: #627ac5;
+}
+
+.el-dialog__footer {
+	padding-bottom: 70px;
+}
+
+
+/*教育局--学校基本信息*/
+
+.sub_informationCheckDialog .el-form-item__content {
+	width: 274px;
+}
+
+
+/*数据上报学校端上传学校图片*/
+
+
+/*上传*/
+
+.uploader .avatar-uploader .el-upload {
+	border: 1px dashed #d9d9d9;
+	border-radius: 6px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.uploader .avatar-uploader .el-upload:hover {
+	border-color: #409EFF;
+}
+
+.uploader .avatar-uploader-icon {
+	font-size: 28px;
+	color: #8c939d;
+	width: 178px;
+	height: 178px;
+	line-height: 178px;
+	text-align: center;
+}
+
+.uploader .avatar {
+	width: 178px;
+	height: 178px;
+	display: block;
+}
+/*基础信息*/
+#tab-first, #tab-second {
+	padding: 0 30px;
+}
